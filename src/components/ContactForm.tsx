@@ -58,16 +58,18 @@ export default function ContactForm() {
         setErrorMessage('Failed to send message. Please try again.');
         setState('error');
       }
-    } catch (error) {
+    } catch {
       setErrorMessage('An error occurred. Please try again.');
       setState('error');
     }
   };
 
   return (
-    <form onSubmit={handleSubmit} className="contact-form">
+    <form onSubmit={handleSubmit} className="contact-form" aria-label="Contact form">
       <div className="form-group">
-        <label htmlFor="name">Name *</label>
+        <label htmlFor="name">
+          Name <span aria-label="required">*</span>
+        </label>
         <input
           type="text"
           id="name"
@@ -76,11 +78,14 @@ export default function ContactForm() {
           onChange={handleChange}
           placeholder="Your name"
           required
+          aria-required="true"
         />
       </div>
 
       <div className="form-group">
-        <label htmlFor="email">Email *</label>
+        <label htmlFor="email">
+          Email <span aria-label="required">*</span>
+        </label>
         <input
           type="email"
           id="email"
@@ -89,6 +94,7 @@ export default function ContactForm() {
           onChange={handleChange}
           placeholder="your@email.com"
           required
+          aria-required="true"
         />
       </div>
 
@@ -105,7 +111,9 @@ export default function ContactForm() {
       </div>
 
       <div className="form-group">
-        <label htmlFor="message">Message *</label>
+        <label htmlFor="message">
+          Message <span aria-label="required">*</span>
+        </label>
         <textarea
           id="message"
           name="message"
@@ -114,16 +122,19 @@ export default function ContactForm() {
           placeholder="Tell us about your project..."
           rows={5}
           required
+          aria-required="true"
         />
       </div>
 
       {state === 'error' && (
-        <div className="form-message error">{errorMessage}</div>
+        <div className="form-message error" role="alert">
+          {errorMessage}
+        </div>
       )}
 
       {state === 'success' && (
-        <div className="form-message success">
-          Thank you! We'll be in touch soon.
+        <div className="form-message success" role="status">
+          Thank you! We&apos;ll be in touch soon.
         </div>
       )}
 
@@ -131,6 +142,7 @@ export default function ContactForm() {
         type="submit" 
         className="btn btn-primary"
         disabled={state === 'submitting' || state === 'success'}
+        aria-busy={state === 'submitting'}
       >
         {state === 'submitting' ? 'Sending...' : 'Send Message'}
       </button>

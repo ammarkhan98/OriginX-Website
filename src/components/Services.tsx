@@ -59,13 +59,15 @@ export default function Services() {
             Comprehensive solutions to accelerate your business growth
           </p>
         </div>
-        <div className="services-grid">
+        <div className="services-grid" role="list">
           {services.map((service) => (
-            <div key={service.title} className="service-card">
-              <div className="service-icon">{service.icon}</div>
+            <div key={service.title} className="service-card" role="listitem">
+              <div className="service-icon" aria-hidden="true">
+                {service.icon}
+              </div>
               <h3>{service.title}</h3>
               <p>{service.description}</p>
-              <a href="#" className="service-link">
+              <a href="#" className="service-link" aria-label={`Learn more about ${service.title}`}>
                 Learn more →
               </a>
             </div>

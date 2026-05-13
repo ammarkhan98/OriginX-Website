@@ -2,14 +2,14 @@ export default function Footer() {
   const year = new Date().getFullYear()
 
   return (
-    <footer className="footer">
+    <footer className="footer" role="contentinfo">
       <div className="container">
         <div className="footer-content">
           <div className="footer-section">
             <h4>OriginX</h4>
             <p>Transforming businesses through innovative technology solutions.</p>
           </div>
-          <div className="footer-section">
+          <nav className="footer-section" aria-label="Services">
             <h4>Services</h4>
             <ul>
               <li>
@@ -22,8 +22,8 @@ export default function Footer() {
                 <a href="#services">Consulting</a>
               </li>
             </ul>
-          </div>
-          <div className="footer-section">
+          </nav>
+          <nav className="footer-section" aria-label="Company">
             <h4>Company</h4>
             <ul>
               <li>
@@ -36,8 +36,8 @@ export default function Footer() {
                 <a href="#contact">Contact</a>
               </li>
             </ul>
-          </div>
-          <div className="footer-section">
+          </nav>
+          <nav className="footer-section" aria-label="Legal">
             <h4>Legal</h4>
             <ul>
               <li>
@@ -47,9 +47,9 @@ export default function Footer() {
                 <a href="#terms">Terms of Service</a>
               </li>
             </ul>
-          </div>
+          </nav>
         </div>
-        <div className="footer-divider"></div>
+        <div className="footer-divider" role="presentation"></div>
         <div className="footer-bottom">
           <p>© {year} OriginX. All rights reserved.</p>
         </div>
