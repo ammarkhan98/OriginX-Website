@@ -1,0 +1,86 @@
+
+> originx-website@0.0.1 dev
+> next dev
+
+  ▲ Next.js 14.2.33
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 1934ms
+ ○ Compiling / ...
+ ✓ Compiled / in 1774ms (457 modules)
+ GET / 200 in 2007ms
+ GET / 200 in 36ms
+ ✓ Compiled /about in 328ms (462 modules)
+ GET /about 200 in 493ms
+ ✓ Compiled /pricing in 193ms (465 modules)
+ GET /pricing 200 in 338ms
+ ⨯ Error: Cannot find module './819.js'
+Require stack:
+- /Users/ammarkhan/OriginXWebsite/OriginX-Website/.next/server/webpack-runtime.js
+- /Users/ammarkhan/OriginXWebsite/OriginX-Website/.next/server/app/pricing/page.js
+- /Users/ammarkhan/OriginXWebsite/OriginX-Website/node_modules/next/dist/server/require.js
+- /Users/ammarkhan/OriginXWebsite/OriginX-Website/node_modules/next/dist/server/load-components.js
+- /Users/ammarkhan/OriginXWebsite/OriginX-Website/node_modules/next/dist/build/utils.js
+- /Users/ammarkhan/OriginXWebsite/OriginX-Website/node_modules/next/dist/server/dev/hot-middleware.js
+- /Users/ammarkhan/OriginXWebsite/OriginX-Website/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /Users/ammarkhan/OriginXWebsite/OriginX-Website/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /Users/ammarkhan/OriginXWebsite/OriginX-Website/node_modules/next/dist/server/lib/router-server.js
+- /Users/ammarkhan/OriginXWebsite/OriginX-Website/node_modules/next/dist/server/lib/start-server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+    at /Users/ammarkhan/OriginXWebsite/OriginX-Website/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:1043:27)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at mod.require (/Users/ammarkhan/OriginXWebsite/OriginX-Website/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:182:18)
+    at __webpack_require__.f.require (/Users/ammarkhan/OriginXWebsite/OriginX-Website/.next/server/webpack-runtime.js:198:28)
+    at /Users/ammarkhan/OriginXWebsite/OriginX-Website/.next/server/webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (/Users/ammarkhan/OriginXWebsite/OriginX-Website/.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (/Users/ammarkhan/OriginXWebsite/OriginX-Website/.next/server/webpack-runtime.js:162:22)
+    at /Users/ammarkhan/OriginXWebsite/OriginX-Website/.next/server/app/page.js:1:16257
+    at Object.<anonymous> (/Users/ammarkhan/OriginXWebsite/OriginX-Website/.next/server/app/page.js:1:16298)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at mod.require (/Users/ammarkhan/OriginXWebsite/OriginX-Website/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:182:18)
+    at requirePage (/Users/ammarkhan/OriginXWebsite/OriginX-Website/node_modules/next/dist/server/require.js:109:84)
+    at /Users/ammarkhan/OriginXWebsite/OriginX-Website/node_modules/next/dist/server/load-components.js:103:84
+    at async loadComponentsImpl (/Users/ammarkhan/OriginXWebsite/OriginX-Website/node_modules/next/dist/server/load-components.js:103:26)
+    at async DevServer.findPageComponentsImpl (/Users/ammarkhan/OriginXWebsite/OriginX-Website/node_modules/next/dist/server/next-server.js:714:36)
+    at async DevServer.findPageComponents (/Users/ammarkhan/OriginXWebsite/OriginX-Website/node_modules/next/dist/server/dev/next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (/Users/ammarkhan/OriginXWebsite/OriginX-Website/node_modules/next/dist/server/base-server.js:1910:24)
+    at async DevServer.renderToResponseImpl (/Users/ammarkhan/OriginXWebsite/OriginX-Website/node_modules/next/dist/server/base-server.js:1962:32)
+    at async DevServer.pipeImpl (/Users/ammarkhan/OriginXWebsite/OriginX-Website/node_modules/next/dist/server/base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/ammarkhan/OriginXWebsite/OriginX-Website/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/ammarkhan/OriginXWebsite/OriginX-Website/node_modules/next/dist/server/base-server.js:818:17)
+    at async /Users/ammarkhan/OriginXWebsite/OriginX-Website/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/ammarkhan/OriginXWebsite/OriginX-Website/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/ammarkhan/OriginXWebsite/OriginX-Website/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/ammarkhan/OriginXWebsite/OriginX-Website/node_modules/next/dist/server/lib/router-server.js:179:21)
+    at async handleRequest (/Users/ammarkhan/OriginXWebsite/OriginX-Website/node_modules/next/dist/server/lib/router-server.js:359:24)
+    at async requestHandlerImpl (/Users/ammarkhan/OriginXWebsite/OriginX-Website/node_modules/next/dist/server/lib/router-server.js:383:13)
+    at async Server.requestListener (/Users/ammarkhan/OriginXWebsite/OriginX-Website/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/ammarkhan/OriginXWebsite/OriginX-Website/.next/server/webpack-runtime.js',
+    '/Users/ammarkhan/OriginXWebsite/OriginX-Website/.next/server/app/pricing/page.js',
+    '/Users/ammarkhan/OriginXWebsite/OriginX-Website/node_modules/next/dist/server/require.js',
+    '/Users/ammarkhan/OriginXWebsite/OriginX-Website/node_modules/next/dist/server/load-components.js',
+    '/Users/ammarkhan/OriginXWebsite/OriginX-Website/node_modules/next/dist/build/utils.js',
+    '/Users/ammarkhan/OriginXWebsite/OriginX-Website/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/Users/ammarkhan/OriginXWebsite/OriginX-Website/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/Users/ammarkhan/OriginXWebsite/OriginX-Website/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/Users/ammarkhan/OriginXWebsite/OriginX-Website/node_modules/next/dist/server/lib/router-server.js',
+    '/Users/ammarkhan/OriginXWebsite/OriginX-Website/node_modules/next/dist/server/lib/start-server.js'
+  ],
+  page: '/'
+}
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 1741ms (692 modules)
+ GET / 500 in 1962ms
+[?25h

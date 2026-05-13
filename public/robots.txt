@@ -1,0 +1,11 @@
+# robots.txt for OriginX
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /.well-known/
+
+# Crawl-delay (in seconds)
+Crawl-delay: 1
+
+# Sitemap
+Sitemap: https://originx.tech/sitemap.xml
