@@ -157,41 +157,7 @@ export default function Hero() {
             </motion.div>
           </motion.div>
 
-          {/* Right side - Shooting star animation */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.5, duration: 0.8 }}
-            className="hidden md:flex items-center justify-center relative h-screen overflow-hidden"
-          >
-            <div className="relative w-full h-full">
-              {/* Background for shooting stars */}
-              {[0, 2, 4].map((delay) => (
-                <motion.div
-                  key={delay}
-                  className="absolute"
-                  initial={{ x: '-20%', y: '80%', opacity: 0, rotate: 45 }}
-                  animate={{ x: '120%', y: '10%', opacity: [0, 1, 1, 0], rotate: 45 }}
-                  transition={{
-                    duration: 4,
-                    repeat: Infinity,
-                    delay: delay,
-                    ease: 'easeInOut',
-                  }}
-                >
-                  {/* Orange streak/trail */}
-                  <div className="absolute inset-0 w-96 h-1 bg-gradient-to-r from-orange-500 to-transparent blur-sm" />
 
-                  {/* White shooting star */}
-                  <div className="absolute -inset-1 w-6 h-6 rounded-full bg-white shadow-lg"
-                    style={{
-                      boxShadow: '0 0 20px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 140, 0, 0.4)',
-                    }}
-                  />
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
         </div>
       </div>
 
