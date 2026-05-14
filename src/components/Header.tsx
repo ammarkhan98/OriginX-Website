@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function Header() {
   return (
     <header className="header">
@@ -24,6 +26,15 @@ export default function Header() {
               Get Started
             </a>
           </nav>
+          <div className="header-logo">
+            <Image
+              src="/logo.png"
+              alt="OriginX Logo"
+              width={100}
+              height={60}
+              style={{ objectFit: 'contain' }}
+            />
+          </div>
         </div>
       </div>
     </header>

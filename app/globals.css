@@ -150,6 +150,12 @@ p {
   align-items: center;
 }
 
+.header-logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
 .nav-link {
   color: var(--text);
   text-decoration: none;
