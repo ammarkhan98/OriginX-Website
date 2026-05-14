@@ -5,10 +5,6 @@ export default function Header() {
     <header className="header">
       <div className="container">
         <div className="header-content">
-          <div className="logo">
-            <span className="logo-origin">Origin</span>
-            <span className="logo-x">X</span>
-          </div>
           <nav className="nav">
             <a href="#services" className="nav-link">
               Services
